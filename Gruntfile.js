@@ -43,4 +43,5 @@ module.exports = function(grunt) {
   })
 
   grunt.registerTask('default', ['http-server:dev', 'watch'])
+  grunt.registerTask('build', ['stylus'])
 }
