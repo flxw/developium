@@ -3,6 +3,7 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 <article class="post">
+  <img class="featureimage" src="{{image}}">
   <h1 itemprop="name headline" class="page-title">{{title}}</h1>
   <div class="publishingdate">
     <time datetime="October 20, 2014" itemprop="datePublished">{{date format="DD MMMM YYYY"}}</time>
