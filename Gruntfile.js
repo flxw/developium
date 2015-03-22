@@ -45,10 +45,10 @@ module.exports = function(grunt) {
     'copy': {
       main: {
         files: [
-          {expand: true, src: ['assets/**/style.css'], dest: 'build/'},
-          {expand: true, src: ['assets/images/*'], dest: 'build/'},
-          {expand: true, src: ['*.hbs'], dest: 'build/'},
-          {expand: true, src: ['package.json'], dest: 'build/'}
+          {expand: true, src: ['assets/**/style.css'], dest: 'developium/'},
+          {expand: true, src: ['assets/images/*'], dest: 'developium/'},
+          {expand: true, src: ['*.hbs'], dest: 'developium/'},
+          {expand: true, src: ['package.json'], dest: 'developium/'}
           ]
       }
     },
@@ -57,7 +57,7 @@ module.exports = function(grunt) {
         options: {
           archive: 'developium.zip'
         },
-        src: ['build/**/*']
+        src: ['developium/**/*']
       }
     }
   })
