@@ -1,0 +1,46 @@
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600|Noto+Serif" rel="stylesheet" type="text/css">
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+<body>
+  <div class="asideheader">
+    <div class="feature">
+      <img src="/img/me.jpg">
+      <div class="description">
+        <p class="name">Felix Wolff</p>
+        <p class="speciality">IT-Systems Engineering</p>
+        <p class="location"><i class="fa fa-map-marker"></i> Potsdam, Germany</p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href='#'><span class="highlighter">#</span>projects</a></li>
+        <li><a href='#'><span class="highlighter">#</span>articles</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="content">
+    {{{body}}}
+
+    {{! Ghost outputs important scripts and data with this tag }}
+    {{ghost_foot}}
+  </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@require 'variables.styl'
+
+.asideheader
+  height 8rem
+  width 100%
+
+  /* Background pattern from subtlepatterns.com */
+  background-image url('../img/congruent_outline.png')
+  box-shadow inset -10px 0 20px 0px #232323
+  color header-text-color
+
+  @media screen and (min-width expansion-width)
+    position relative
+    top 0
+    left 0
+    width 30%
+    height 100%
+    overflow contain
+
+  .feature
+    img
+      @media screen and (min-width expansion-width)
+        width 50%
+        margin 30% 25% 10% 25%
+
+      height auto
+      width 4rem
+      margin 1rem
+      border-radius 50%
+      border 2px solid #fff
+
+    .description
+      position absolute
+      left 7rem
+      top 0
+      padding-top 1rem
+
+      @media screen and (min-width expansion-width)
+        position relative
+        left auto
+        text-align center
+        margin 0 auto
+
+      p
+        margin 0
+      .name
+        font-size 1.5rem
+        font-weight 200
+        line-height 1.5rem
+      .speciality
+        font-size 0.9rem
+        font-weight 200
+      .location
+        font-size 0.9rem
+        font-weight 200
+
+  nav
+    width 100%
+    top 6rem
+    height 1.4rem
+    border-bottom 0.15rem solid feature-color
+
+    @media screen and (min-width expansion-width)
+      border none
+      width 50%
+      margin 2rem auto
+
+    ul
+      padding 0
+      margin 0 0 0 0.5rem
+      li
+        display inline
+        @media screen and (min-width expansion-width)
+          display list-item
+          list-style-type none
+
+        padding 0 0.5rem 0 0.5rem
+        a
+          text-decoration none
+          color header-text-color
+          &:hover
+            color feature-color
