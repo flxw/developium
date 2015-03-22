@@ -1,7 +1,7 @@
 {
   "name": "developium",
-  "version": "0.1.0a",
-  "description": "A minimalistic theme for Ghost inspired by the Designmodo Journal.",
+  "version": "0.1.0",
+  "description": "A single-author-oriented theme inspired by Ghostium",
   "repository": {
     "type": "git",
     "url": "https://github.com/flxw/developium.git"
@@ -14,6 +14,8 @@
   "private": true,
   "devDependencies": {
     "grunt": "^0.4.5",
+    "grunt-contrib-compress": "^0.13.0",
+    "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-stylus": "^0.21.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-http-server": "^1.2.0"
