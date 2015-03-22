@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       all:['js/*.js']
     },
     'watch': {
-      files:['*.html', 'css/*.styl'],
+      files:['*.html', 'assets/css/*.styl'],
       tasks:['stylus'],
       options: {
         spawn: false,
@@ -36,7 +36,7 @@ module.exports = function(grunt) {
           urlfunc: 'embedurl' // use embedurl('test.png') in our code to trigger Data URI embedding
         },
         files: {
-          'css/style.css': ['css/*.styl', 'css/normalize.css']
+          'assets/css/style.css': ['assets/css/*.styl', 'assets/css/normalize.css']
         }
       }
     }
